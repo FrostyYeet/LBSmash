@@ -35,7 +35,7 @@ public class SimpleMovement : MonoBehaviour
         if (Physics2D.Raycast(transform.position, -Vector2.up, gameObject.GetComponent<Collider2D>().bounds.size.y / 2 + 0.1f, WhatIsGround))
         {
             isGrounded = true;
-            jumpCount = 1;
+            jumpCount = 2;
         }
         else
         {
